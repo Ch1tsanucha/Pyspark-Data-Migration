@@ -1,0 +1,17 @@
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    age INT,
+    department VARCHAR(50),
+    salary DECIMAL(10, 2)
+);
+
+INSERT INTO employees (first_name, last_name, age, department, salary) VALUES
+    ('John', 'Doe', 30, 'Engineering', 60000.00),
+    ('Jane', 'Smith', 25, 'Marketing', 50000.00),
+    ('Alice', 'Johnson', 40, 'Sales', 70000.00),
+    ('Bob', 'Brown', 35, 'Engineering', 65000.00),
+    ('Eve', 'Davis', 45, 'HR', 55000.00);
+
+SELECT * FROM employees;
